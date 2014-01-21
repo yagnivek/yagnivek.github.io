@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>YAGNIVEK - HCI ETSII ULL</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+		
+		<!-- Begin JavaScript -->
+
+		<script type="text/javascript" src="lib/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.tools.js"></script>
+    	<script type="text/javascript" src="lib/cufon.js"></script>
+    	<script type="text/javascript" src="lib/jquery.custom.js"></script>
+
+<script type="text/javascript" src="lib/pirobox.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$().piroBox({
+			my_speed: 400, //animation speed
+			bg_alpha: 0.1, //background opacity
+			slideShow : false, // true == slideshow on, false == slideshow off
+			slideSpeed : 4, //slideshow duration in seconds(3 to 6 Recommended)
+			close_all : '.piro_close,.piro_overlay'// add class .piro_overlay(with comma)if you want overlay click close piroBox
+
+	});
+});
+</script>
+
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="content_top"></div>
+            <div id="content">
+                <div id="menu">
+                    <ul>
+                        <li><a href="index.html" >Inicio</a></li>
+                        <li><a href="documentacion.html">Documentación</a></li>
+                        <li><a href="evaluacion.html">Evaluación</a></li>
+                        <li><a href="acercade.html">Acerca de</a></li>
+                        <li><a href="contactar.html">Contactar</a></li>
+                    </ul>
+                </div>
+                <div id="header">   
+                    <div id="slider_bg">
+                        <div class="waveshow">
+                            <img src="images/header.jpg" alt="" title="Some Text 1 Goes Here" />
+                            <img src="images/header2.jpg" alt="" title="Some Text 2 Goes Here" />
+                            <img src="images/header3.jpg" alt="" title="Some Text 3 Goes Here" />									
+                        </div> <!-- waveshow -->
+                    </div> <!-- slider_bg -->				
+                </div> <!--header-->
+
+                <div id="index_content">
+                    <div class="contact_left">
+                        <div class="contact_left_top"></div>
+                        <div class="contact_left_bg">
+                            <h3>Regístrate</h3>
+                       
+                        <p>¿Has oído hablar de Yacnivek? Regístrate y descubre la nueva asistente electrónica del momento</p>
+
+                        <br />
+                        <div id="contact_form">
+                            <form id="form3" method="post" action="action.html">
+                                <fieldset>
+                                    <input id="con_name" type="text" name="con_name" placeholder="Nombre" alt="" required="required"/><br />
+                                    <input id="con_name" type="text" name="con_apellidos" placeholder="Apellidos" alt=""/><br />
+                                    <input id="con_name" type="password" name="con_pass" placeholder="Contraseña" alt="" required="required"/><br />
+                                    <input id="con_email" type="email" name="con_email" placeholder="Nombre@Ejemplo.com" alt=""/><br />
+                                    <h3>Fecha de nacimiento:</h3>
+                                    <input id="con_name" type="data" name="con_email" placeholder="dd/mm/aaaa" alt=""/><br />
+                                    <h3>Sexo:</h3>
+                                    <p>Mujer <input id="con_name" type="radio" name="con_sexo" value="Mujer" alt=""/><br /></p>
+                                    <p>Hombre <input id="con_name" type="radio" name="con_sexo" value="Hombre" alt=""/><br /></p> <br/>
+                                    <h3>País:</h3>
+					<select>
+					  <option value="España"> España </option>
+					  <option value="Alemania"> Alemania </option>
+					  <option value="Reino Unido"> Reino Unido </option>
+					  <option value="Estados Unidos"> Estados Unidos </option>
+					  <option value="China"> China </option>
+					  <option value="Japón"> Japón </option>
+					  <option value="Francia"> Francia </option>
+					  <option value="Rusia"> Rusia </option>
+					  <option value="Portugal"> Portugal </option>
+					</select>
+				     <br/><br/><h3>Pasatiempos:</h3>
+                                    <p>Leer <input id="con_name" type="checkbox" name="con_hobby" value="Leer" alt=""/><br /></p>
+                                    <p>Cine <input id="con_name" type="checkbox" name="con_hobby" value="Cine" alt=""/><br /></p>
+                                    <p>Deportes <input id="con_name" type="checkbox" name="con_hobby" value="Deportes" alt=""/><br /></p>
+                                    <p>Escuchar música <input id="con_name" type="checkbox" name="con_hobby" value="Musica" alt=""/><br /></p>
+                                    <p>Tocar instrumento <input id="con_name" type="checkbox" name="con_hobby" value="Instrumento" alt=""/><br /></p>
+                                    <p>Otros <input id="con_name" type="checkbox" name="con_hobby" value="Otros" alt=""/><br /></p><br/>
+                                    <h3>Página Web:</h3>
+                                    <input id="con_name" type="url" name="con_web" placeholder="http://www.my-web.es" alt=""/><br />
+                                    <textarea id="con_mess" name="con_mess" cols="0" placeholder="Descripción personal: " ows="0"></textarea><br />
+                                    <input type="submit" id="contact-submit" value="Enviar"/>
+                                </fieldset>
+                            </form>
+                        </div>
+                        </div>
+                        <div class="contact_left_bot"></div>
+                    </div>
+                    <div class="contact_right">
+                        <div class="contact_right_top"></div>
+                        <div class="bg_right">
+                            <div class="contact_right_bg">
+                                <h3>Yacnivek</h3>
+                                <img src="images/img2.jpg" alt="" title="" /> 
+                                <h2>Al registrarte podrás disfrutar de muchas ventajas:</h2>
+                                <p>- Contarás blablabla</p>
+                                <p>- blablabla</p>
+                                <p>- blablabla</p>
+                            </div>
+                        </div>
+                        <div class="contact_right_bot"></div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+
+                <div id="footer_box">
+                    <div id="footer_box_top"></div>
+                    <div id="footer_box_bg">
+                        <div class="foot_col1">
+                            <h3>Desarrolladores</h3>
+                            <div class="pad_left">
+                                Salomé González Rodríguez
+                            </div>
+                            
+                            <div class="pad_left">
+                                Kevin Isaac Robayna Hernández
+                            </div>
+                            
+                            <div class="pad_left">
+                                Jose Antonio Rodíguez Leandro
+                            </div>
+                            
+                            <div class="pad_left">
+                                Juan Antonio Oliva Peréz
+                            </div>
+                            
+                            <div class="pad_left">
+                                Pedro Damián Barrera Fernández
+                            </div>
+                        </div> <!-- end foo_col1-->
+                        <div class="foot_col2">
+                            <h3>Correo Electrónico</h3>
+                            <div class="pad_left">
+                                 yanivek.hci.etsii.ull@gmail.com
+                             </div>
+                        </div> <!-- end foo_col1-->
+                        <div class="foot_col3">
+                            <h3>Asignatura</h3>
+                            <div class="pad">
+                                Sistemas de Interacción Persona Computador
+                                2013/2014
+                            </div>
+                        </div> <!-- end foo_col1-->
+                        <div class="foot_col4">
+                            <h3>Síguenos en:</h3>
+                            <div class="link2"><a href="https://www.facebook.com/yagnivek.ull">Facebook</a></div>
+                            <div class="link4"><a href="https://twitter.com/YagniveK_HCI">Twitter</a></div>   
+                        </div> <!-- end foo_col1-->
+                        <div style="clear: both"></div>
+                    </div> <!--End footer_box_bg-->
+                    <div id="footer_box_bot"></div>
+                </div> <!--End footer_box_top-->
+            </div> <!--End footer_box-->
+
+            <div id="content_bot"></div>
+        </div>
+    </body>
+</html>
