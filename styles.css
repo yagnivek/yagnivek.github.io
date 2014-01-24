@@ -9,10 +9,6 @@ Released for free under a Creative Commons Attribution 2.5 License
     padding: 0px;
 }
 
-
-
-
-
 img{
     padding: 0px;
     border: none;
@@ -388,6 +384,10 @@ body {
 .contact_left_bot{
     background: url(images/contact_bot.png) no-repeat top;
     height: 5px;
+}
+
+.contact_left_bg {
+    color: #000000;
 }
 
 .contact_left_bg p{
