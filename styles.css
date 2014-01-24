@@ -391,8 +391,9 @@ body {
 }
 
 .contact_left_bg p{
-                     width:910px;
-                     color: #000000;
+    padding: 10px;
+    width:910px;
+    color: #000000;
 }
 
 .contact_right{
