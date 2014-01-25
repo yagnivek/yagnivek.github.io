@@ -14,6 +14,24 @@
     	<script type="text/javascript" src="lib/cufon.js"></script>
     	<script type="text/javascript" src="lib/jquery.custom.js"></script>
 
+
+        <script type="text/javascript">
+            function show_congrats() {
+                document.getElementById('congrats').style.display='block';
+            }
+        </script>
+
+        <style type="text/css">
+            #congrats
+            {
+				padding: 30px;
+				color: white;
+				font-size: 16px;
+				font-weight: 800;
+				display: none;
+			}
+        </style>
+
     </head>
     <body>
         <div id="wrap">
@@ -44,7 +62,7 @@
 
                         <br />
                         <div id="contact_form">
-                            <form id="form3" method="post" action="action.html">
+                            <form id="form3" method="post"  action="javascript: return false" onSubmit="show_congrats();">
                                 <fieldset>
                                     <input id="con_name" type="text" name="con_name" placeholder="Nombre" alt="" required="required"/><br />
                                     <input id="con_name" type="text" name="con_apellidos" placeholder="Apellidos" alt=""/><br />
@@ -79,6 +97,7 @@
                                     <textarea id="con_mess" name="con_mess" cols="0" placeholder="Descripción personal: " ows="0"></textarea><br />
                                     <input type="submit" id="contact-submit" value="Enviar"/>
                                 </fieldset>
+                                <p id="congrats">Felicidades, Tu registro se ha completado con exito</p>
                             </form>
                         </div>
                         </div>

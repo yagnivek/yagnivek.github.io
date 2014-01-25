@@ -13,6 +13,23 @@
     	<script type="text/javascript" src="lib/cufon.js"></script>
     	<script type="text/javascript" src="lib/jquery.custom.js"></script>
 
+
+        <script type="text/javascript">
+            function show_congrats() {
+                document.getElementById('congrats').style.display='block';
+            }
+        </script>
+
+        <style type="text/css">
+            #congrats
+            {
+				padding: 30px;
+				color: white;
+				font-size: 16px;
+				font-weight: 800;
+				display: none;
+			}
+        </style>
     </head>
     <body>
         <div id="wrap">
@@ -43,15 +60,16 @@
 
                         <br />
                         <div id="contact_form">
-                            <form id="form2" method="post" action="#">
+                            <form id="form2" method="post" action="javascript: return false" onSubmit="show_congrats();">
                                 <fieldset>
-                                    <input id="con_name" type="text" name="con_name" placeholder="Nombre" alt=""/><br />
-                                    <input id="con_email" type="text" name="con_email" placeholder="Nombre@Ejemplo.com" alt=""/><br />
+                                    <input id="con_name" type="text" name="con_name" placeholder="Nombre" required="required" alt=""/><br />
+                                    <input id="con_email" type="email" name="con_email" placeholder="Nombre@Ejemplo.com" required="required" alt=""/><br />
                                     <input id="con_website" type="text" name="con_website" placeholder="Asunto" alt=""/><br />
-                                    <textarea id="con_mess" name="con_mess" cols="0" placeholder="Mensaje: "rows="0"></textarea><br />
+                                    <textarea id="con_mess" name="con_mess" cols="0" placeholder="Mensaje: " required="required" rows="0"></textarea><br />
                                     <input type="submit" id="contact-submit" value="Enviar"/>
                                     <input type="button" id="contact-clear" value="Cancelar"/>
                                 </fieldset>
+                                <p id="congrats">Gracias por ponerte en contacto, te responderemos lo antes posible</p>
                             </form>
                         </div>
                         </div>
